@@ -1,7 +1,7 @@
 import { useState } from 'react'
-
+import axios from "axios";
 import './App.css'
-import Header from './header.jsx'
+import Weather from './Weather.jsx'
 
 
 function App() {
@@ -9,15 +9,7 @@ function App() {
   return (
     
     <>
-
-      <Header/>
-      <div className="card">
-      <h1>hello </h1>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-       
-      </div>     
+       <Weather/>
     </>
   )
 }
